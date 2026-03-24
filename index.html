@@ -27,6 +27,32 @@
       border: 3px solid white;
     }
 
+    body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+    .btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+    header img {
+  width: 100px;
+}
+    
+    .container {
+  width: 90%;
+  max-width: 500px;
+  margin: -30px auto 20px;
+  padding: 20px;
+}
     .container {
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
@@ -91,6 +117,15 @@ header img {
 
 header img:hover {
   transform: scale(1.1);
+}
+    @media (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    margin-top: -20px;
+  }
 }
   </style>
 </head>
