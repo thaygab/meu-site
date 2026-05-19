@@ -1,165 +1,192 @@
 <!DOCTYPE html>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Thayla | Estudante de Tecnologia
-  </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Thayla | Portfólio</title>
 
   <style>
-    body {
-      background-image: url("imagem-listras.png");
+
+    /* RESET */
+    *{
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* BODY */
+    body{
       font-family: 'Segoe UI', sans-serif;
+      background-image: url("imagem-listras.png");
+      background-size: cover;
+      background-position: center;
+
       color: black;
       text-align: center;
+
+      padding: 30px 15px;
     }
 
-    header {
-      padding: 50px 20px;
+    /* FOTO */
+    .foto{
+      width: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+
+      transition: 0.3s;
+      margin-bottom: 20px;
+    }
+
+    .foto:hover{
+      transform: scale(1.05);
+    }
+
+    /* CARD PRINCIPAL */
+    .card{
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+
+      border: 1px solid rgba(255,255,255,0.2);
+
+      max-width: 600px;
+      margin: auto;
+
+      padding: 30px;
+      border-radius: 20px;
+
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
+
+    /* TITULOS */
+    h1{
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    h2{
+      margin-top: 30px;
+      margin-bottom: 10px;
+
       color: black;
     }
 
-    header img {
-      width: 120px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      border: 3px solid white;
+    /* TEXTOS */
+    p{
+      line-height: 1.6;
+      margin-bottom: 10px;
     }
 
-    body {
-  font-size: 16px;
-}
-
-h1 {
-  .info {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-
-  padding: 20px;
-  border-radius: 15px;
-
-  width: fit-content;
-  margin: auto;
-
-  border: 1px solid rgba(255,255,255,0.3);
-  font-size: 24px;
-}
- }
-
-h2 {
-  font-size: 20px;
-}
-
-    header img {
-  width: 100px;
-}
-    
-    .container {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  
-  border-radius: 15px;
-  padding: 20px;
-  margin: -30px auto 20px;
-  width: 90%;
-  max-width: 500px;
-
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
+    /* SKILLS */
+    .skills{
+      margin-top: 10px;
+      font-weight: bold;
     }
 
-    h1 {
-      margin: 10px 0;
-    }
-
-    h2 {
-      color: white;
-    }
-
-    p {
-      line-height: 1.5;
-    }
-
-    .btn {
+    /* BOTÕES */
+    .btn{
       display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background: #b23a48;
+
+      margin: 10px 5px;
+      padding: 12px 20px;
+
+      background: black;
       color: white;
-      border-radius: 8px;
+
       text-decoration: none;
+      border-radius: 10px;
+
       transition: 0.3s;
     }
 
-    .btn:hover {
+    .btn:hover{
       background: white;
+      color: black;
+
+      transform: translateY(-3px);
     }
 
-    footer {
-      margin: 20px;
+    /* FOOTER */
+    footer{
+      margin-top: 25px;
       font-size: 14px;
-      color: white;
+      color: #f1f1f1;
     }
 
-header img {
-  width: 120px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: 0.3s;
-}
+    /* RESPONSIVO */
+    @media (max-width: 600px){
 
-header img:hover {
-  transform: scale(1.1);
-}
-    @media (max-width: 500px) {
-  h1 {
-    font-size: 20px;
-  }
+      h1{
+        font-size: 22px;
+      }
 
-  .container {
-    margin-top: -20px;
-  }
-}
+      .card{
+        padding: 20px;
+      }
+
+      .foto{
+        width: 100px;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
+    <!-- FOTO -->
+    <img class="foto" src="minha-foto.jpg.png" alt="Minha foto">
 
-  <header>
-    <!-- FOTO (opcional) -->
-    <img src="minha-foto.jpg.png" alt="Minha foto">
-<div class="info">
+  <div class="card">
+
+    <!-- NOME -->
     <h1>Thayla Gabriele Andrade Bomfim</h1>
+
     <p>Estudante em formação 💻</p>
-    <p> HTML • CSS • JavaScript • Figma • Python</p>
-</div>
-  </header>
 
-  <div class="container">
+    <p class="skills">
+      HTML • CSS • JavaScript • Figma • Python
+    </p>
+
+    <!-- SOBRE -->
     <h2>Sobre mim</h2>
+
     <p>
-    Apaixonada por tecnologia, design e desenvolvimento web. 
-    Estou construindo minha carreira como desenvolvedora frontend e buscando minha primeira oportunidade para crescer, aprender e criar experiências digitais incríveis.
+      Apaixonada por tecnologia, design e desenvolvimento web.
+      Estou construindo minha carreira como desenvolvedora frontend
+      e buscando minha primeira oportunidade na área.
     </p>
 
+    <!-- OBJETIVO -->
     <h2>Objetivo</h2>
+
     <p>
-      Evoluir constantemente, construir projetos reais e conquistar minha vaga na área de TI.
+      Evoluir constantemente, criar projetos reais
+      e conquistar minha vaga na área de TI.
     </p>
 
+    <!-- CONTATO -->
     <h2>Contato</h2>
 
-    <a class="btn" href="https://wa.me/5547991498052">WhatsApp</a>
-    <a class="btn" href="http://www.linkedin.com/in/thayla-gabriele-andrade-bomfim" target="_blank">
-  LinkedIn
-</a>
-    <a class="btn" href="https://github.com/thaygab" target="_blank">
-  GitHub
-</a>
+    <a class="btn" href="https://wa.me/5547991498052">
+      WhatsApp
+    </a>
+
+    <a class="btn"
+       href="http://www.linkedin.com/in/thayla-gabriele-andrade-bomfim"
+       target="_blank">
+
+      LinkedIn
+    </a>
+
+    <a class="btn"
+       href="https://github.com/thaygab"
+       target="_blank">
+
+      GitHub
+    </a>
+
   </div>
 
   <footer>
@@ -167,4 +194,5 @@ header img:hover {
   </footer>
 
 </body>
+</html>
 </html>
